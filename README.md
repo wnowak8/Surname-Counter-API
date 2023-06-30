@@ -5,7 +5,7 @@ This API provides endpoints to retrieve information about surnames based on gend
 ## Requirements
 
 - Python 3.x
-- [https://github.com/wnowak8/Surname-Counter-API/blob/main/requirements.txt]() (install using `pip install -r requirements.txt`)
+- [requirements.txt](https://github.com/wnowak8/Surname-Counter-API/blob/main/requirements.txt) (install using `pip install -r requirements.txt`)
 
 ## Source
 
