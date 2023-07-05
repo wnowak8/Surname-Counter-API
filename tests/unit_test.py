@@ -1,5 +1,5 @@
 import pytest
-from utils import get_surname_info
+import utils
 
 
 result = ["The surname 'Nowak' is in position 1 and is held by 99803 people.",
@@ -16,5 +16,5 @@ result = ["The surname 'Nowak' is in position 1 and is held by 99803 people.",
                                   ('M', 'ABDULSALAM A.EBRAHIM', result[3]),
                                   ('M', 'asdf', result[4])])
 def test_get_surname_info(gender, surname, result):
-    _result = get_surname_info(gender=gender, surname=surname)
+    _result = utils.get_surname_info(gender=gender, surname=surname)
     assert _result == result, "WRONG RESULT"
