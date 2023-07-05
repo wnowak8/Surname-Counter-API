@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request
-from utils import get_surname_info
+from service import get_surname_info
 
 
 app = Flask(__name__)

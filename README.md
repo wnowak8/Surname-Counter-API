@@ -50,6 +50,26 @@ The API utilizes the following function:
 
 - `get_surname_info(gender: str, surname: str) -> str`: Retrieves information about the given surname and gender.
 
+## GitHub Actions
+
+This project utilizes three GitHub actions to automate various tasks within the repository. Below is a brief description of each action:
+
+### Continuous Integration (CI)
+
+The Continuous Integration (CI) action runs whenever changes are made to the repository. It employs tools such as code linters, unit tests, and static analyzers to validate code correctness and project quality. If any issues are detected, the CI action provides relevant feedback, allowing for quick issue resolution.
+
+### Docker Image Build
+
+The Docker Image Build action is responsible for automatically building a Docker image based on the Dockerfile in the project. The image is built whenever changes are made to the Dockerfile or the source code. This ensures an up-to-date image of the application that can be deployed to production servers or other environments.
+
+### Unit Tests
+
+The Unit Tests action performs automated unit testing of the application. After each push to the main branch or the opening of a pull request to the main branch, this action executes a set of tests that verify their individual correctness. Unit tests help ensure that individual components of the application work as intended and can catch any bugs introduced during development.
+
+### Functional Tests
+
+The Functional Tests action performs functional testing of the application. After each push to the main branch or the opening of a pull request to the main branch, this action executes a set of tests that verify the correct functionality of the application. Functional tests ensure that the application meets specified requirements and functions as expected.
+
 ## License
 
 This API is licensed under the MIT License. See the [LICENSE](https://opensource.org/license/mit/) file for details.
