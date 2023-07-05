@@ -29,4 +29,4 @@ jobs:
 
       - name: Run function tests
         run: |
-          pytest ./tests/function_test
+          pytest ./tests/function_test.py
