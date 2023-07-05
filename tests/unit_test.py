@@ -5,7 +5,7 @@ from service import get_surname_info
 
 result = ["The surname 'Nowak' is in position 1 and is held by 99803 people.",
           "The surname 'Kowalski' is in position 2 and is held by 67505 people.",
-          "The surname 'Zmuda-Trzebiatowska' is in position 14636 and is held by 61 people.",
+          "The surname 'Zmuda-Trzebiatowska' is in position 43273 and is held by 61 people.",
           "The surname 'Abdulsalam A.Ebrahim' is in position 273992 and is held by 2 people.",
           "No information found for the surname 'Asdf'."]
 
