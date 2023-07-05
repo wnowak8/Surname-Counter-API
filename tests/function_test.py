@@ -3,7 +3,7 @@ import context
 import requests
 
 API_URL = "http://localhost:5000"
-result = ["The surname 'Nowak' is in position 1 and is held by 101512 people.",
+result = ["The surname 'Nowak' is in position 1 and is held by 99803 people.",
           "The surname 'Kowalski' is in position 2 and is held by 67505 people.",
           "The surname 'Zmuda-Trzebiatowska' is in position 43273 and is held by 61 people.",
           "The surname 'Abdulsalam A.Ebrahim' is in position 273992 and is held by 2 people.",
@@ -11,7 +11,7 @@ result = ["The surname 'Nowak' is in position 1 and is held by 101512 people.",
 
 
 @pytest.mark.parametrize(
-        "gender,surname,result", [('F', 'Nowak', result[0]),
+        "gender,surname,result", [('M', 'Nowak', result[0]),
                                   ('m', 'Kowalski', result[1]),
                                   ('f', 'Zmuda-Trzebiatowska', result[2]),
                                   ('M', 'ABDULSALAM A.EBRAHIM', result[3]),
