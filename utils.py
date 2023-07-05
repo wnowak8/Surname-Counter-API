@@ -28,9 +28,11 @@ def get_info(url: str, surname: str) -> str:
     try:
         surname_index = df.loc[df['Nazwisko aktualne'] == surname].index[0]
         surname_count = df['Liczba'][surname_index]
+        people = "person" if surname_count == 1 else "people"
         surname = '-'.join(word.title() for word in surname.split('-'))
         response = f"The surname '{surname.title()}' is in position " + \
-            f"{surname_index} and is held by {surname_count} people."
+            f"{surname_index} and is held by {surname_count} {people}."
+
     except IndexError:
         response = f"No information found for the surname '{surname.title()}'."
 
